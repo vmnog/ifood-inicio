@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# iFood Início Clone com Next.js e TailwindCSS | @caraquecoda
 
-## Getting Started
+Bem-vindo ao repositório do projeto iFood Início, um clone da interface do site [iFood](https://www.ifood.com.br/inicio), desenvolvido com Next.js e TailwindCSS.
 
-First, run the development server:
+- Veja a aplicação em funcionamento: [Demo](https://ifood-inicio.vercel.app/)
+- Assista ao tutorial no YouTube: [Tutorial](https://www.youtube.com/watch?v=GGJsbj0NrkM&list=PLCwsaNyAWqXoFYN-ZcQGE-RsdY1WrNrxA)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Sobre o Projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🍕🍔 Aprenda a criar um clone da interface do iFood utilizando Next.js e TailwindCSS! Neste tutorial detalhado, vamos construir juntos uma aplicação que replica a interface do popular serviço de entrega de comida, explorando as funcionalidades essenciais e as melhores práticas para desenvolvimento web moderno.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Funcionalidades
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Interface Responsiva:** Design responsivo para uma ótima experiência em dispositivos móveis e desktops.
+- **Navegação Rápida:** Navegação eficiente utilizando as rotas do Next.js.
+- **Estilização Moderna:** Estilos aplicados com TailwindCSS para um design moderno e consistente.
 
-## Learn More
+## Estrutura do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+O projeto é composto por vários arquivos e pastas principais:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `pages/`: Contém as páginas da aplicação, seguindo a estrutura de rotas do Next.js.
+- `components/`: Contém os componentes reutilizáveis da aplicação.
+- `styles/`: Contém os arquivos de estilo, incluindo a configuração do TailwindCSS.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Como Usar
 
-## Deploy on Vercel
+Para usar o clone do iFood Início, siga os passos abaixo:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone este repositório para sua máquina local:
+    ```bash
+    git clone https://github.com/vmnog/ifood-inicio
+    cd ifood-inicio
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Instale as dependências:
+    ```bash
+    npm install
+    ```
+
+3. Execute o projeto em modo de desenvolvimento:
+    ```bash
+    npm run dev
+    ```
+
+4. Abra o navegador e acesse:
+    ```
+    http://localhost:3000
+    ```
+
+## Tecnologias Utilizadas
+
+- **Next.js**: Framework React para renderização do lado do servidor e geração de sites estáticos.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TailwindCSS**: Framework CSS para estilização da aplicação.
+- **TypeScript**: Superset do JavaScript que adiciona tipos estáticos ao código.
+
+## Scripts Disponíveis
+
+No projeto, você pode executar os seguintes scripts:
+
+- `npm run dev`: Executa a aplicação em modo de desenvolvimento.
+- `npm run build`: Cria a versão de produção da aplicação.
+- `npm run start`: Inicia o servidor da aplicação.
+- `npm run lint`: Executa o linter para verificar problemas no código.
+
+## Contribuições
+
+Contribuições são sempre bem-vindas! Se você tem alguma sugestão para melhorar este projeto, sinta-se à vontade para criar uma issue ou enviar um pull request.
+
+---
+
+Esperamos que você aproveite a utilização do nosso Clone do iFood Início, e estamos ansiosos para ver as incríveis funcionalidades que você pode adicionar a ele!
