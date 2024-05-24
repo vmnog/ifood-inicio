@@ -35,12 +35,12 @@ Para usar o clone do iFood Início, siga os passos abaixo:
 
 2. Instale as dependências:
     ```bash
-    npm install
+    pnpm install
     ```
 
 3. Execute o projeto em modo de desenvolvimento:
     ```bash
-    npm run dev
+    pnpm run dev
     ```
 
 4. Abra o navegador e acesse:
@@ -59,10 +59,10 @@ Para usar o clone do iFood Início, siga os passos abaixo:
 
 No projeto, você pode executar os seguintes scripts:
 
-- `npm run dev`: Executa a aplicação em modo de desenvolvimento.
-- `npm run build`: Cria a versão de produção da aplicação.
-- `npm run start`: Inicia o servidor da aplicação.
-- `npm run lint`: Executa o linter para verificar problemas no código.
+- `pnpm run dev`: Executa a aplicação em modo de desenvolvimento.
+- `pnpm run build`: Cria a versão de produção da aplicação.
+- `pnpm run start`: Inicia o servidor da aplicação.
+- `pnpm run lint`: Executa o linter para verificar problemas no código.
 
 ## Contribuições
 
