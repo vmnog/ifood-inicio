@@ -14,6 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html
+      suppressHydrationWarning
       lang="pt"
       className={iFoodFonts}>
       <body>{children}</body>
