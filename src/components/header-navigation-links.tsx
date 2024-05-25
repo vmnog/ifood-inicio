@@ -1,7 +1,7 @@
+import { NavigationLink } from "@/app/api/navigation-links/route"
 import { Skeleton } from "@/components/ui/skeleton"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
-import { NavigationLink } from "../api/navigation-links/route"
 
 interface NavLinkProps {
   content: string
