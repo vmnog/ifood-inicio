@@ -27,6 +27,7 @@ const config = {
         'ifood-yellow': '#FCBB00',
         'ifood-green': '#50A773',
         'ifood-border': '#DCDCDC',
+        'ifood-skeleton': '#F1F1F1'
       },
       fontFamily: {
         'ifood-regular': ['var(--font-ifood-regular)'],

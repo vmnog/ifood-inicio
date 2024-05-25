@@ -1,5 +1,7 @@
+import { Skeleton } from "@/components/ui/skeleton"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
+import { NavigationLink } from "../api/navigation-links/route"
 
 interface NavLinkProps {
   content: string
@@ -17,29 +19,20 @@ function NavLink({
   >{content}</Link>
 }
 
-interface NavigationLink {
-  id: string
-  title: string
-}
-
-function delay(ms: number): Promise<void> {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-async function getNavigationLinks(): Promise<NavigationLink[]> {
-  const response = await fetch('http://localhost:3001/navigation-links', { cache: 'no-cache' });
-
-  if (!response.ok) {
-    throw new Error('Failed to fetch data');
-  }
-
-  await delay(2000);
-
-  return await response.json();
+export function HeaderNavigationLinksSkeleton() {
+  return (
+    <nav className="flex items-center justify-center font-ifood-titulos-regular">
+      <Skeleton className="w-[460px] h-12 rounded-lg" />
+    </nav>
+  )
 }
 
 export async function HeaderNavigationLinks() {
-  const links = await getNavigationLinks()
+  const response = await fetch(`${process.env.URL}/api/navigation-links`, { cache: 'no-cache' });
+  if (!response.ok) {
+    throw new Error('Failed to fetch navigation links');
+  }
+  const links: NavigationLink[] = await response.json();
 
   return (
     <nav className="flex items-center justify-center font-ifood-titulos-regular">

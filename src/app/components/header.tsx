@@ -5,7 +5,7 @@ import { IconIFoodLogoSVG } from "../icons/icon-ifood-logo";
 import { IconExitSVG } from "../icons/icon-exit";
 import { IconBagSVG } from "../icons/icon-bag";
 import { Suspense } from "react";
-import { HeaderNavigationLinks } from "./header-navigation-links";
+import { HeaderNavigationLinks, HeaderNavigationLinksSkeleton } from "./header-navigation-links";
 
 function SearchItemOrStoreInput() {
   return (
@@ -52,7 +52,7 @@ export function Header() {
     <header className='flex items-center justify-between gap-7 border-b border-ifood-border px-[37px] py-[14px]'>
       <div className="flex gap-7">
         <IconIFoodLogoSVG />
-        <Suspense fallback={<p>Loading...</p>}>
+        <Suspense fallback={<HeaderNavigationLinksSkeleton />}>
           <HeaderNavigationLinks />
         </Suspense>
       </div>
