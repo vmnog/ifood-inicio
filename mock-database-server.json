@@ -1,0 +1,25 @@
+{
+  "navigation-links": [
+    {
+      "title": "Início"
+    },
+    {
+      "title": "Restaurantes"
+    },
+    {
+      "title": "Mercados"
+    },
+    {
+      "title": "Bebidas"
+    },
+    {
+      "title": "Farmácias"
+    },
+    {
+      "title": "Pets"
+    },
+    {
+      "title": "Shopping"
+    }
+  ]
+}
