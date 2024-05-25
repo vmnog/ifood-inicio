@@ -17,7 +17,7 @@ export async function GET() {
     { id: 7, title: 'Shopping' },
   ];
 
-  await delay(2000);
+  await delay(1000);
 
   return NextResponse.json(navigationLinks);
 }

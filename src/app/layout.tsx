@@ -16,7 +16,7 @@ export default function RootLayout({
     <html
       suppressHydrationWarning
       lang="pt"
-      className={iFoodFonts}>
+      className={`${iFoodFonts} overflow-x-hidden`}>
       <body>{children}</body>
     </html>
   )

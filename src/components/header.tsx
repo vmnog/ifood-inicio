@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { IconSearchSVG } from "../icons/icon-search";
-import { IconChevronDownSVG } from "../icons/icon-chevron-down";
-import { IconIFoodLogoSVG } from "../icons/icon-ifood-logo";
-import { IconExitSVG } from "../icons/icon-exit";
-import { IconBagSVG } from "../icons/icon-bag";
+import { IconSearchSVG } from "./icons/icon-search";
+import { IconChevronDownSVG } from "./icons/icon-chevron-down";
+import { IconIFoodLogoSVG } from "./icons/icon-ifood-logo";
+import { IconExitSVG } from "./icons/icon-exit";
+import { IconBagSVG } from "./icons/icon-bag";
 import { Suspense } from "react";
 import { HeaderNavigationLinks, HeaderNavigationLinksSkeleton } from "./header-navigation-links";
 
@@ -49,7 +49,7 @@ function CartHeaderButton() {
 
 export function Header() {
   return (
-    <header className='flex items-center justify-between gap-7 border-b border-ifood-border px-[37px] py-[14px]'>
+    <header className='flex items-center justify-between gap-7 px-[37px] py-[14px] border-b border-b-ifood-border'>
       <div className="flex gap-7">
         <IconIFoodLogoSVG />
         <Suspense fallback={<HeaderNavigationLinksSkeleton />}>

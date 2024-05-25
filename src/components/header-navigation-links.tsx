@@ -21,9 +21,7 @@ function NavLink({
 
 export function HeaderNavigationLinksSkeleton() {
   return (
-    <nav className="flex items-center justify-center font-ifood-titulos-regular">
-      <Skeleton className="w-[460px] h-12 rounded-lg" />
-    </nav>
+    <Skeleton className="w-[460px] h-12 rounded-lg" />
   )
 }
 
