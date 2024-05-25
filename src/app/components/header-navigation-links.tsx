@@ -1,5 +1,4 @@
-import { twMerge } from "tailwind-merge";
-
+import { cn } from "@/lib/utils"
 import Link from "next/link"
 
 interface NavLinkProps {
@@ -11,7 +10,7 @@ function NavLink({
   content,
   isActive
 }: NavLinkProps) {
-  return <Link className={twMerge(
+  return <Link className={cn(
     'hover:text-ifood-red hover:cursor-pointer',
     isActive && 'text-ifood-red'
   )} href="#"
@@ -45,8 +44,8 @@ export async function HeaderNavigationLinks() {
   return (
     <nav className="flex items-center justify-center font-ifood-titulos-regular">
       <ul className="flex gap-4 text-sm text-ifood-gray">
-        {links.map(link => (
-          <li key={link.id}><NavLink content={link.title} isActive /></li>
+        {links.map((link, index) => (
+          <li key={link.id}><NavLink content={link.title} isActive={index === 0} /></li>
         ))}
       </ul>
     </nav>
